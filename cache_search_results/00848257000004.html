@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/1999/xhtml/vocab"><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by barcode | GEPIR | Services | GS1 - The global language of business
+    </title>
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500" media="all" /><link href="main.css" type="text/css" rel="stylesheet" media="screen" /><link type="text/css" rel="stylesheet" href="http://www.gs1.org/fonts/213164/38627A10AFBBF24C9.css" media="all" /><link type="image/x-icon" rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABz0lEQVQ4T2NkoBAwYug3zvqP1cyz0zDVAhUiBNWTeBl4OD6BNJfGuDJ0L9mN3W1oBsEMYGIwzvr799QUBmazHIZXOzsZxNzLcXsOyRCIAUBn/z8zlYHRJBvMtdRVZjh++S7QfUDp/1h8hGKAUeaTWB8r6cVbjzPcWdvAoBLSANRERMhCDWFEtz3YzoBhTV8q2DXIrgIZicIHGWCUuQNsQH2mL0NphCMDj30R2GoOdlaGHz9/w53x/+w0rE5iNMqCGNCRH8hQGu0MDkAQ0JWTYLj86AWYjUszzEQMLxycWsDAx8PBYBjfAXYyOCDxAJA/nqjLSUjffPySYV1HGkNQxSyw8lVtKQxhVXMgLujtZWAoLGRg+PqVgYGHh4Hh2zcGhpYWBob2dmhCQotGZAvBBkyZwsCQDYzi69cZGLZuhRj26hUDg5QUPCWCExIslKeVRTJkdS1HhAHIgKwsBoaUFAaGefMYGN68YWDg42NgMDBASsoq0XwM/PwfQbp+HJvIwGGVj2oAzAXr1jEwlANTKcgQSUkkA2DuRstMKF7484eBgYWFgQFEA/3PUFeHxQAsIf5+ypT/AkAvvEhM/P/n4UOGH2fPMvz7/JlBnYGBCQC2t7T9yAv70gAAAABJRU5ErkJggg==" />
+    <style>
+        @import url("http://www.gs1.org/modules/system/system.base.css");
+        @import url("http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/dist/css/bootstrap.css");
+        @import url("http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/dist/css/bootstrap-theme.css");
+        @import url("http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/dist/css/bootstrap-accessibility.css");
+        @import url("http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/docs/assets/css/docs.css");
+    </style>
+    <!-- HTML5 element support for IE6-8 -->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+        function showWait(Tabid) {
+            if ($get('errorExplanation') != null)
+                $get('errorExplanation').style.display = 'none';
+            if ($get(Tabid) != null) {
+                $get(Tabid).style.display = 'inline';
+                $get(Tabid).style.visibility = 'visible';
+            }
+            setTimeout('document.images["WaitImage"].src = document.images["WaitImage"].src', 1);
+        }
+
+        function hiddenExplanation() {
+            if ($get('errorExplanation') != null)
+                $get('errorExplanation').style.display = 'none';
+        }
+
+        function hiddenResponse() {
+            if ($get('SummaryResponse') != null)
+                $get('SummaryResponse').style.display = 'none';
+        }
+    </script>
+
+<link href="/V32/XX/WebResource.axd?d=3Qz39D0ALfZZBzyERbTBjIxDR2DHtHMacsZnFjpBpprhvMS4p-YxmWNFD1_BFiKGIyc7OQogNwHFgnltnYZQ3UXc6XOvSXBMpdbFuaaZhe5EespZ-tq6rAmFHCtBRruY8XgboQ2&amp;t=634897082200000000" type="text/css" rel="stylesheet" /><title>
+
+</title></head>
+<body class="html no-sidebars i18n-en toolkit">
+    <!-- inlcude Google Tracking Manager script -->
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-439W" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-439W');
+    </script>
+
+    <!-- End Google Tag Manager -->
+    <div id="skip-link">
+        <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo">
+                        <div class="logo1">
+                            <a href="http://www.gs1.org" title="Home">
+                                <img width="72" height="59" border="0" alt="GS1 logo" src="http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/logo.png">
+                            </a>
+                            <p class="large hidden-xs hidden-sm">
+                                <strong><a class="" href="http://www.gs1.org" title="Home">GS1</a></strong>
+                                <br>The Global Language of Business
+                            </p>
+                        </div>
+                    </div>
+                    <div class="secondary-nav">
+
+                        <ul class="list-inline">
+                            <li><a href="http://www.gs1.org/contact">Change Country</a>
+                            </li>
+                        </ul>
+
+                        <a class="btn-primary login-button" role="button" href="http://mozone.gs1.org/"><span class="icon-user"></span>MO Zone login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="container">
+                    <nav class="navbar yamm navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <div class="logo1 visible-xs">
+                                <a href="/" title="Home">
+                                    <img width="72" height="59" border="0" alt="GS1 logo" src="http://www.gs1.org/sites/all/themes/custom/gsone_phoenix_toolkit/logo.png">
+                                </a>
+                            </div>
+                            <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle collapsed">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="secondary-nav">
+                                <a class="btn-primary login-button" role="button" href="#0"><span class="icon-user"></span> Login</a>
+                                <a class="search" href=""><span class="icon-search"></span></a>
+                            </div>
+                        </div>
+                        <div id="navbar-collapse" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="yamm-fw "><a href="http://www.gs1.org/about" class="">About</a>
+                                </li>
+                                <li class="yamm-fw "><a href="http://www.gs1.org/standards" class="">Standards</a>
+                                </li>
+                                <li class="yamm-fw "><a href="http://www.gs1.org/industries" class="">Industries</a>
+                                </li>
+                                <li class="yamm-fw "><a href="http://www.gs1.org/news-events" class="">News &amp; Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="site-content container bg-white flush-outside">
+            <div class="col-sm-3 hidden-xs hidden-sm">
+                <nav class="local-navigation structure-navigation-other">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent item-l1"><a href="javascript:void(0);">GEPIR</a>
+                        </li>
+                        <ul class="list-group group-l2">
+                            
+                                <li class="list-group-item item-l2 bg-transparent"><a href="default.aspx?Lang=en-US">- all searches</a>
+                                </li>
+                            
+                                <li class="list-group-item item-l2 bg-transparent item-l2-active"><a href="gtin.aspx?Lang=en-US">- search by barcode</a>
+                                </li>
+                             
+                                <li class="list-group-item item-l2 bg-transparent"><a href="sscc.aspx?Lang=en-US">- search by SSCC</a>
+                                </li>
+                            
+                                 <li class="list-group-item item-l2 bg-transparent"><a href="gln.aspx?Lang=en-US">- search by location</a>
+                                 </li>
+                            
+                                <li class="list-group-item item-l2 bg-transparent"><a href="search_by_name.aspx?Lang=en-US">- search by name</a>
+                                </li>
+                            
+                        </ul>
+                    </ul>
+                </nav>
+                <nav class="local-navigation structure-navigation-other">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent item-l1"><a href="javascript:void(0);">More info</a>
+                        </li>
+                        <ul class="list-group group-l2">
+                            <li class="list-group-item item-l2 bg-transparent"><a href="http://www.gs1.org/contact/">- Contact</a>
+                            </li>
+                            
+                                <li class="list-group-item item-l2 bg-transparent"><a href="about.aspx?Lang=en-US">- About</a>
+                                </li>
+                                                       
+                            <li class="list-group-item item-l2 bg-transparent">
+                                <a href="http://helpdesk.gs1.org/ArticlesBySubject.aspx?GEPIR&id=e9f9f26c-333a-e211-992c-00155d644635" target="_blank">- FAQ</a>
+                            </li>                            
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9 col-xs-12">
+                <form name="aspnetForm" method="post" action="gtin.aspx?Lang=en-US" id="aspnetForm">
+<input type="hidden" name="_ctl0_cphMain_LoginPanel_ScriptManager_HiddenField" id="_ctl0_cphMain_LoginPanel_ScriptManager_HiddenField" value="" />
+<input type="hidden" name="_ctl0_cphMain_TabContainerGTIN_ClientState" id="_ctl0_cphMain_TabContainerGTIN_ClientState" value="{&quot;ActiveTabIndex&quot;:0,&quot;TabState&quot;:[true]}" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTg0MDI5NTk5D2QWAmYPZBYCAgEPZBYCAgEPZBYIAgEPDxYCHgdWaXNpYmxlaGRkAgMPZBYCAgMPZBYCAgMPPCsACgEADxYCHhJEZXN0aW5hdGlvblBhZ2VVcmwFMGh0dHA6Ly9nZXBpci5nczEub3JnL3YzMi94eC9ndGluLmFzcHg/TGFuZz1lbi1VU2RkAgcPZBYCZg9kFgQCAw8PFgIfAGhkZAIFD2QWDAIDDw8WBh4EVGV4dAUMR1MxIFVTLCBJTkMuHgtOYXZpZ2F0ZVVybAUpaHR0cDovL3d3dy5nczEub3JnL2Fib3V0L291cl9vZmZpY2VzLmh0bWwfAGcWAh4Hb25DbGljawWaAXdpbmRvdy5vcGVuICh0aGlzLmhyZWYsICdwb3B1cHdpbmRvdycsJ3dpZHRoPTYwMCxoZWlnaHQ9NDUwLHNjcm9sbGJhcnM9MCxyZXNpemFibGU9MCx0b29sYmFyPTAsbG9jYXRpb249MCxkaXJlY3Rvcmllcz0wLHN0YXR1cz0wLG1lbnViYXI9MCcpO3JldHVybiBmYWxzZTtkAgQPFgQeC18hSXRlbUNvdW50AgEfAGcWAgIBD2QWAmYPFRcTMDg1NTk5OTAwMTAwODxiciAvPidQYWNpZmljIFRleHRpbGVzICYgU291cmNpbmcsIEluYy48YnIgLz4IQ0E8YnIgLz4UMTExNSBDT09LRSBBVkU8YnIgLz4GPGJyIC8+AAAAABA5MTcxMS0xNDk4Jm5ic3A7D0NMQVJFTU9OVDxiciAvPg1Vbml0ZWQgU3RhdGVzABhUZWw6KDMxMCkgNzgwLTI4ODk8YnIgLz4YRmF4Oig5MDkpIDM4NS0xMDk5PGJyIC8+AAAAAAAOMDg0ODI1NzA8YnIgLz4BMABkAgUPDxYEHwIFDTA2MTQxNDE4MDAwMDEfAGdkZAIGDw8WBB8CBQExHwBnZGQCBw8PFgQfAgUBMB8AZ2RkAggPDxYEHwIFCE5vIGVycm9yHwBnZGQCCQ8PFgYeCENzc0NsYXNzBQlmb290ZXJUT1AfAgUCMjceBF8hU0ICAmRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBTNfY3RsMDpjcGhNYWluOkxvZ2luUGFuZWw6TG9naW5DdHJsOkxvZ2luSW1hZ2VCdXR0b24FHl9jdGwwOmNwaE1haW46VGFiQ29udGFpbmVyR1RJTgUeX2N0bDA6Y3BoTWFpbjpUYWJDb250YWluZXJHVElODw9kZmQ3kLGyA9paXL6SlFzYbuHbAHwrcQ==" />
+
+
+<script src="/V32/XX/ScriptResource.axd?d=DPx-H4SDOeoj9Y1w4C6Bp22Vdil_G_Pzxrl-KXCSl8pArzWg70OP7aY_t3eTblUh1_jOPKIQ1YgMr_ptkEYzNVyJn5vCLcvTl4hRdgkz1vKKDx-o7BazOvARG3bCNAk_u69gradPI2d4gBn1BRBB5ip_fbo1&amp;t=ffffffffbcb9b94a" type="text/javascript"></script>
+<script src="/v32/xx/gtin.aspx?_TSM_HiddenField_=_ctl0_cphMain_LoginPanel_ScriptManager_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%3aen-US%3ac5c982cc-4942-4683-9b48-c2c58277700f%3a865923e8%3a411fea1c%3ae7c87f07%3bAjaxControlToolkit%2c+Version%3d1.0.20229.20821%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3ac5c982cc-4942-4683-9b48-c2c58277700f%3a865923e8%3a91bd373d%3aad1f21ce%3a596d588c%3a8e72a662%3a411fea1c%3aacd642d2%3a77c58d20%3a14b56adc%3a269a19ae%3ad7349d0c" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F155F32B" />
+                
+    
+    <div class="contentContainer clearfix">
+        <div class="col middle noright">
+            <div class="txtcontent">
+                <div class="topheader">
+                    <div class="headerText" id="header_links" nowrap>
+                        
+<!-- ToolkitScriptManager -->
+
+<script src="/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+
+<div id="_ctl0_cphMain_LoginPanel_loginPanel" class="loginPanel" style="display: none;">
+	
+    <div class="closeLoginPanel">
+        <a id="_ctl0_cphMain_LoginPanel_closepopup" title="Close">X</a>
+    </div>
+    <table cellspacing="0" cellpadding="1" border="0" id="_ctl0_cphMain_LoginPanel_LoginCtrl">
+		<tr>
+			<td><table cellpadding="0" border="0">
+				<tr>
+					<td align="center" colspan="2">Hosted MO Login<br><br></td>
+				</tr><tr>
+					<td align="right"><label for="_ctl0_cphMain_LoginPanel_LoginCtrl_UserName">Username</label></td><td><input name="_ctl0:cphMain:LoginPanel:LoginCtrl:UserName" type="text" id="_ctl0_cphMain_LoginPanel_LoginCtrl_UserName" class="txtlogin" />&nbsp;</td>
+				</tr><tr>
+					<td align="right"><label for="_ctl0_cphMain_LoginPanel_LoginCtrl_Password">Password</label></td><td><input name="_ctl0:cphMain:LoginPanel:LoginCtrl:Password" type="password" id="_ctl0_cphMain_LoginPanel_LoginCtrl_Password" class="txtlogin" />&nbsp;</td>
+				</tr><tr>
+					<td align="right" colspan="2"><input type="submit" name="_ctl0:cphMain:LoginPanel:LoginCtrl:LoginButton" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;_ctl0:cphMain:LoginPanel:LoginCtrl:LoginButton&quot;, &quot;&quot;, true, &quot;_ctl0:cphMain:LoginPanel:LoginCtrl&quot;, &quot;&quot;, false, false))" language="javascript" id="_ctl0_cphMain_LoginPanel_LoginCtrl_LoginButton" /></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+    
+
+</div>
+
+
+                        
+                                <a id="_ctl0_cphMain_lvwLogin_loginHyperLink" class="handcursor">Hosted MO Login</a>
+                            
+                    </div>
+                </div>
+                <h1 class="color-orange">
+                    Search by GTIN
+                </h1>
+                <p>
+                    <img src="images/gtin3.jpg" class="floatLeft" alt="" />
+                    As the name implies, the GTIN helps automate the trading process – basically buying
+                    and selling. GTINs are therefore assigned to any item (product or service) that
+                    may be priced, or ordered, or invoiced at any point in any supply chain. The GTIN
+                    is then used to to retrieve pre-defined information about the item.<br />
+                    <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">More Information on GTIN.</a></p>
+                <p>
+                    Locate enterprise by information appearing in the barcode placed on trade item or
+                    consumer unit:</p>
+                <p>
+                    &nbsp;</p>
+                <!-- QUERY START -->
+                <div id="_ctl0_cphMain_UpdatePanel1">
+	
+                        <div class="rightside">
+                            <div class="ajax__tab_xp" id="_ctl0_cphMain_TabContainerGTIN">
+		<div id="_ctl0_cphMain_TabContainerGTIN_header">
+			<span id="__tab__ctl0_cphMain_TabContainerGTIN_TabPanelGTIN">
+                                        GTIN
+                                    </span>
+		</div><div id="_ctl0_cphMain_TabContainerGTIN_body">
+			<div id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN">
+				
+                                        
+                                        <table width="100%" border="0">
+                                            <tr>
+                                                <td width="50%" align="right">
+                                                    Global Trade Item Number:
+                                                </td>
+                                                <td width="50%">
+                                                    <input name="_ctl0:cphMain:TabContainerGTIN:TabPanelGTIN:txtRequestGTIN" type="text" value="00848257000004" maxlength="14" id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_txtRequestGTIN" style="font-size: 18px" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                    <span id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_rblGTIN"><input id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_rblGTIN_0" type="radio" name="_ctl0:cphMain:TabContainerGTIN:TabPanelGTIN:rblGTIN" value="party" checked="checked" /><label for="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_rblGTIN_0">Trade Item Ownership</label><br><input id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_rblGTIN_1" type="radio" name="_ctl0:cphMain:TabContainerGTIN:TabPanelGTIN:rblGTIN" value="item" /><label for="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_rblGTIN_1">Trade Item Info</label></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                    <div class="btnSearch">
+                                                        <input type="submit" name="_ctl0:cphMain:TabContainerGTIN:TabPanelGTIN:btnSubmitGTIN" value="Search" onclick="showWait('TabContainerGTIN_TabPanelGTIN_UpdateProgress1');" language="javascript" id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_btnSubmitGTIN" class="btn btn-primary btn-margin" />
+                                                        <div id="_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_UpdateProgress1" style="display:none;">
+					
+                                                                <img id="WaitImage" src="images/Wait.gif" alt="" />
+                                                            
+				</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    
+			</div>
+		</div>
+	</div>
+                            <!-- QUERY END -->
+                        </div>
+                        <div class="rightside">
+                            <br />
+                            
+                        </div>
+                        <div id="Resultcontent">
+                            <!-- RESULT START -->
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            
+<table id="SummaryResponse" align="left">
+    <tr>
+        <td nowrap>
+                
+                
+        </td>
+    </tr>
+    <tr>
+        <td nowrap>
+            This information is provided on behalf of
+            <a id="_ctl0_cphMain_SRgtin_MoreInfo" onClick="window.open (this.href, 'popupwindow','width=600,height=450,scrollbars=0,resizable=0,toolbar=0,location=0,directories=0,status=0,menubar=0');return false;" href="http://www.gs1.org/about/our_offices.html" target="_blank">GS1 US, INC.</a>.</td>
+    </tr>
+    <tr>
+        <td>
+            
+                    <table id="resultTable" cellspacing="0" cellpadding="0" rules="cols">
+                        <tr>
+                            <th>
+                                GLN</th>
+                            <th>
+                                Company</th>
+                            <th>
+                                Contact</th>
+                            <th>
+                                Last Change</th>
+                            <th>
+                                GCP</th>
+                            <th>
+                                Status</th>
+                            <th>
+                                Provider GLN</th>
+                        </tr>
+                
+                    <tr>
+                        <td align="left">
+                            0855999001008<br />
+                        </td>
+                        <td align="left" id="Address">
+                            <div id="addressscroll">
+                                Pacific Textiles & Sourcing, Inc.<br />
+                                CA<br />
+                                1115 COOKE AVE<br />
+                                <br />
+                                
+                                
+                                
+                                
+                                91711-1498&nbsp;
+                                CLAREMONT<br />
+                                United States
+                            </div>
+                        </td>
+                        <td align="left" id="Contact">
+                            
+                            Tel:(310) 780-2889<br />
+                            Fax:(909) 385-1099<br />
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                        <td align="left">
+                            08482570<br />
+                        </td>
+                        <td align="center">
+                            0
+                        </td>
+                        <td align="center">
+                            
+                        </td>
+                    </tr>
+                
+                    </table>
+                
+        </td>
+    </tr>
+    <tr>
+        <td class="footerText">
+            Responder:
+            <span id="_ctl0_cphMain_SRgtin_lblNumberGLN">0614141800001</span>,
+            Responses:
+            <span id="_ctl0_cphMain_SRgtin_lblnumberofHits">1</span>, RC:
+            <span id="_ctl0_cphMain_SRgtin_lblNumberErrorGLN">0</span>
+            (<span id="_ctl0_cphMain_SRgtin_lblErrorGLN">No error</span>)</td>
+    </tr>  
+</table>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- RESULT END -->
+                        </div>
+                        <!-- NAVIGATION END -->
+                    
+</div>
+            </div>
+        </div>
+    </div>
+    <div style="visibility: hidden;">
+        <span id="_ctl0_cphMain_HitsCount" title="Hits" class="footerTOP">27</span>
+        | <a href="#TOP" title="Top">[Δ]</a>
+    </div>
+
+                
+
+<script type="text/javascript">
+<!--
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"_ctl0_cphMain_LoginPanel_closepopup","DropShadow":true,"PopupControlID":"_ctl0_cphMain_LoginPanel_loginPanel","dynamicServicePath":"/v32/xx/gtin.aspx","id":"programmaticModalPopupBehavior"}, null, null, $get("_ctl0_cphMain_lvwLogin_loginHyperLink"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterMode":2,"InvalidChars":"\u003c\u003e%*-$","id":"_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_FilteredTextBoxExtender1"}, null, null, $get("_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_txtRequestGTIN"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab__ctl0_cphMain_TabContainerGTIN_TabPanelGTIN")}, {"click":hiddenExplanation}, {"owner":"_ctl0_cphMain_TabContainerGTIN"}, $get("_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabContainer, {"activeTabIndex":0,"clientStateField":$get("_ctl0_cphMain_TabContainerGTIN_ClientState")}, {"activeTabChanged":hiddenResponse}, null, $get("_ctl0_cphMain_TabContainerGTIN"));
+});
+// -->
+</script>
+</form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <section id="block-menu-menu-footer-service-menu" class="block block-menu clearfix">
+                    <div class="row">
+                        <div id="footer-service-menu" class="col-md-12 footer-service-menu">
+                            <ul class="list-inline">
+                                <li><a href="http://www.gs1.org/terms-of-use">Terms of use</a>
+                                </li>
+                                <li><a href="http://www.gs1.org/privacy">Privacy policy</a>
+                                </li>
+                                <li><a href="mailto:support@gepirsupport.org">Website feedback</a>
+                                </li>
+                                <li><a href="http://www.gs1.org/contact">Contact local GS1 office</a>
+                                </li>
+                            </ul>
+                        </div>                         
+                    </div>
+                </section>
+                <!-- /.block -->
+            </div>
+        </footer>
+    </div>
+
+    <script src="http://www.gs1.org/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
+
+    <script src="http://www.gs1.org/misc/jquery.once.js?v=1.2"></script>
+
+    <script src="http://www.gs1.org/misc/drupal.js?ngmdef"></script>
+
+    <script src="http://www.gs1.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+
+    <script src="http://www.gs1.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+
+    <script src="http://www.gs1.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js?v=1.10.2"></script>
+
+    <script src="http://www.gs1.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.menu.min.js?v=1.10.2"></script>
+
+    <script src="http://www.gs1.org/sites/all/themes/contrib/bootstrap/js/bootstrap.js?ngmdef"></script>
+
+    <script src="//static.getclicky.com/js" type="text/javascript"></script>
+
+    <script type="text/javascript">        try { clicky.init(100789209); } catch (e) { }</script>
+
+    <noscript>
+        <p>
+            <img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100789209ns.gif" />
+        </p>
+    </noscript>
+</body>
+</html>
+The passed GCP for this page was: <span id="passedGCP">0848257</span>
