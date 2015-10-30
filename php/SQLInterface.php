@@ -60,11 +60,12 @@ class SQLInterface
     {
         echo "<BR>Inserting GS1 Subscriber Row<BR>";
 
-        $insert = " INSERT INTO `GS1_subscribers` (`subscriberID`, `GLN`, `company`, `contact`, `gcp`, `lastChanged`,`status`, `providerGLN`)
+        $insert = " INSERT INTO `GS1_subscribers` (subscriberID, GLN, company, contact, gcp, lastChanged, status, providerGLN)
                     VALUES (NULL, 
                             '".$GTINSearchResults->returnGLN()."',
                             '".$GTINSearchResults->returnAddress()."',
                             '".$GTINSearchResults->returnContact()."',
+                            '".$GTINSearchResults->returnGCP()."',
                             '".$GTINSearchResults->returnLastChanged()."',
                             '".$GTINSearchResults->returnStatus()."',
                             '".$GTINSearchResults->returnProviderGLN()."');";
@@ -98,6 +99,7 @@ class SQLInterface
 
     public function insertValidGCP_has_GS1SubscriberRow($gcp)
     {
+        echo "<BR>inserting a GS1 subscriber row<BR>";
         //save the gcpID in to $gcpID value
         $select = " SELECT * 
                     FROM `Valid_GCP`
@@ -106,7 +108,7 @@ class SQLInterface
 
         $gcpIDrow = $this->connection->query($select);
         $row = mysqli_fetch_array($gcpIDrow, MYSQLI_ASSOC);
-        $gcpID = $row['GCP'];
+        $gcpID = $row['gcpID'];
                 
         //save the subscriberID value to $subscriberID
         $select = " SELECT * 
@@ -116,46 +118,50 @@ class SQLInterface
         
         $subscriberIDrow = $this->connection->query($select);
         $row = mysqli_fetch_array($subscriberIDrow, MYSQLI_ASSOC);
-        $subscriberID = $row['gcp'];
+        $subscriberID = $row['subscriberID'];
                 
         //using those values now insert
         $insert = " INSERT INTO `Valid_GCP_has_GS1_Subscriber` (`gcpID`, `subscriberID`)
                     VALUES (".$gcpID.", 
                             ".$subscriberID.");";
 
+        
+        echo "<BR>".$insert."<BR>";
         //run insert in to Valid_GCP_has_GS1_Subscriber table
         $result = $this->connection->query($insert);
+        var_dump($result);
     }
 
     public function HitList_has_Search_Result($gcp, $gtin)
     {
+        echo "<BR>"."running hitlist has serach results"."<BR>";
         //save the gcpID in to $gcpID value
         $select = " SELECT * 
                     FROM `HitList`
-                    WHERE `GCP`='".$gcp." '
-                    LIMIT 1";
+                    WHERE `GCP`='".$gcp."'";
 
-        $gcpIDrow = $this->connection->query($select);
-        $row = mysqli_fetch_array($gcpIDrow, MYSQLI_ASSOC);
+        $gcpIDrows = $this->connection->query($select);
+        $row = mysqli_fetch_array($gcpIDrows, MYSQLI_ASSOC);
         $gcpID = $row['gcpID'];
                 
         //save the search results value to $subscriberID
         $select = " SELECT * 
                     FROM `GTIN_Search_Results`
-                    WHERE `GTIN`='".$gtin." '
-                    LIMIT 1";
-        
+                    WHERE GTIN='".$gtin."'";
+
         $searchresultsIDrow = $this->connection->query($select);
-        $row = mysqli_fetch_array($searchresultsIDrow, MYSQLI_ASSOC);
+        //if more than one row is returned, select the most recent date
+        $row = mysqli_fetch_array($searchresultsIDrow);
         $searchresultsID = $row['GTINID'];
-                
+
         //using those values now insert
-        $insert = " INSERT INTO `Valid_GCP_has_GS1_Subscriber` (`gcpID`, `subscriberID`)
+        $insert = " INSERT INTO `HitList_has_Search_Result` (`hitListID`, `GTINID`)
                     VALUES ('".$gcpID."', 
-                            '".$searchresultsID."'');";
+                            '".$searchresultsID."');";
 
         //run insert in to Valid_GCP_has_GS1_Subscriber table
         $result = $this->connection->query($insert);
+        var_dump($result);
     }
 
     public function dropQueueTopRow($gcp)

@@ -80,6 +80,7 @@ class GTINSearchQueue
 		$html = new DOMDocument();
 		$html->loadHTML($fullResultsResponse->response);
 
+		//$html = $fullResultsResponse;
 		//if the results were returned from GS1 parse the results, otherwise exit with an error
 		if(strchr($html->saveXML(), '<td class="footerText">'))
 		{
@@ -125,6 +126,7 @@ class GTINSearchQueue
 				//delete the top row of the queue at GTINs_to_Search
 				$this->SQLConnection->dropQueueTopRow($GTINSearchResults->returnGCP());
 				//insert HitList_has_Search_Result
+				echo "<BR>GTIN: ".$GTINSearchResults->returnGTIN()."<BR>";
 				$this->SQLConnection->HitList_has_Search_Result($GTINSearchResults->returnGCP(), $GTINSearchResults->returnGTIN());
 				//generate new random GTIN
 				$gtin = new GTIN($GTINSearchResults->returnGCP());

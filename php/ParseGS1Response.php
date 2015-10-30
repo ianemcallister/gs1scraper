@@ -69,7 +69,7 @@ class ParseGS1Response
 	}
 	public function extractGTIN()
 	{
-		$this->gtin = $this->searchHTML->getElementByID("_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_txtRequestGTIN");
+		$this->gtin = $this->searchHTML->getElementByID("_ctl0_cphMain_TabContainerGTIN_TabPanelGTIN_txtRequestGTIN")->getAttribute('value');
 	}
 	public function extractResponderNumber()
 	{
@@ -329,7 +329,8 @@ class ParseGS1Response
 		{
 			$this->extractGTIN();
 		}
-		return $this->gtin->nodeValue;
+		//obtained differently, don't use node value
+		return $this->gtin;
 	}
 	public function returnInformationProvider()
 	{
